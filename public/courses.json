@@ -1,0 +1,65 @@
+[
+  {
+    "name": "JavaScript",
+    "description": "JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.",
+    "image": "https://demo-images.netlify.app/card/js.jpg",
+    "courseDuration": "6 months",
+    "courseFee": "৳50,000"
+  },
+  {
+    "name": "JAVA",
+    "description": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+    "image": "https://demo-images.netlify.app/card/java.jpg",
+    "courseDuration": "6 months",
+    "courseFee": "৳70,000"
+  },
+  {
+    "name": "Python",
+    "description": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.",
+    "image": "https://demo-images.netlify.app/card/python.jpg",
+    "courseDuration": "6 months",
+    "courseFee": "৳60,000"
+  },
+  {
+    "name": "Oracle",
+    "description": "Oracle is an American multinational computer technology corporation headquartered in Austin, Texas. The company was formerly headquartered in Redwood Shores, California, until December 2020 when it moved its headquarters to Texas.",
+    "image": "https://demo-images.netlify.app/card/oracle.jpg",
+    "courseDuration": "6 months",
+    "courseFee": "৳50,000"
+  },
+  {
+    "name": "Responsive Web Design",
+    "description": "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes from minimum to maximum display size. Recent work also considers the viewer proximity as part of the viewing context as an extension for RWD.",
+    "image": "https://demo-images.netlify.app/card/web-design.jpg",
+    "courseDuration": "3 months",
+    "courseFee": "৳15,000"
+  },
+  {
+    "name": "Web Development",
+    "description": "Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
+    "image": "https://demo-images.netlify.app/card/web-dev.jpg",
+    "courseDuration": "6 months",
+    "courseFee": "৳40,000"
+  },
+  {
+    "name": "Mobile Apps Development",
+    "description": "Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones. These software applications are designed to run on mobile devices, such as a smartphone or tablet computer.",
+    "image": "https://demo-images.netlify.app/card/app.jpg",
+    "courseDuration": "8 months",
+    "courseFee": "৳80,000"
+  },
+  {
+    "name": "Graphic Design",
+    "description": "Graphic design is the profession and academic discipline whose activity consists in projecting visual communications intended to transmit specific messages to social groups, with specific objectives.",
+    "image": "https://demo-images.netlify.app/card/graphic.jpg",
+    "courseDuration": "3 months",
+    "courseFee": "৳20,000"
+  },
+  {
+    "name": "Digital Marketing",
+    "description": "Digital marketing is the component of marketing that utilizes internet and online based digital technologies such as desktop computers, mobile phones and other digital media and platforms to promote products and services.",
+    "image": "https://demo-images.netlify.app/card/digital-marketing.jpg",
+    "courseDuration": "4 months",
+    "courseFee": "৳30,000"
+  }
+]
