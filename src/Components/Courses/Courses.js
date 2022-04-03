@@ -6,6 +6,7 @@ import "./Courses.css";
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([]);
+  const [enroll, setEnroll] = useState(false);
   console.log(cart);
   useEffect(() => {
     fetch("courses.json")
@@ -15,6 +16,15 @@ const Courses = () => {
   const handleAddToCart = (course) => {
     const newCourses = [...cart, course];
     setCart(newCourses);
+  };
+  const handleEnroll = (selectedCourse) => {
+    setEnroll(true);
+  };
+  const handleDelete = (selectedCourse) => {
+    const filtered = cart.filter(
+      (course) => course.name !== selectedCourse.name
+    );
+    setCart(filtered);
   };
   return (
     <div className="container">
@@ -32,7 +42,12 @@ const Courses = () => {
         </div>
         <div className="col-lg-3 sidebar">
           {cart.map((course) => (
-            <Cart key={course.name} course={course} />
+            <Cart
+              handleDelete={handleDelete}
+              handleEnroll={handleEnroll}
+              key={course.name}
+              course={course}
+            />
           ))}
         </div>
       </div>

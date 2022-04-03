@@ -1,7 +1,7 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = ({ course }) => {
+const Cart = ({ course, handleDelete, handleEnroll }) => {
   const { name, image, courseFee } = course;
   return (
     <>
@@ -10,13 +10,19 @@ const Cart = ({ course }) => {
           <img className="rounded-pill" src={image} alt="" />
         </div>
         <div>
-          <h6>Name: {name}</h6>
+          <h6>Name: {name.slice(0, 12)}</h6>
           <p>Price: {courseFee}</p>
-          <button onClick={handleDelte} className="btn btn-primary">
+          <button
+            onClick={() => handleDelete(course)}
+            className="btn btn-primary"
+          >
             Delete
           </button>
           <br />
-          <button onClick={handleEnroll} className="btn btn-primary mt-2">
+          <button
+            onClick={() => handleEnroll(course)}
+            className="btn btn-primary mt-2"
+          >
             Enroll Now
           </button>
         </div>
