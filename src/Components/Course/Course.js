@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 import { AiFillShopping } from "react-icons/ai";
+import "./Course.css";
 
 const Course = ({ course, handleAddToCart }) => {
   const { name, image, courseFee, courseDuration, description } = course;

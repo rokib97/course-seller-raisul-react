@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { CoursesContext } from "../../App";
 import HomeCourses from "../HomeCourses/HomeCourses";
 
 const Home = () => {
-  const [courses, setCourses] = useState([]);
+  // const [courses, setCourses] = useState([]);
+  const [courses, setCourses] = useContext(CoursesContext);
   const navigate = useNavigate();
   useEffect(() => {
     fetch("courses.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
-  }, []);
+  }, [setCourses]);
   return (
     <>
       <div className="container mt-4">

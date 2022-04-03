@@ -5,9 +5,9 @@ import "./Courses.css";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
+  // const [courses] = useContext(CoursesContext);
   const [cart, setCart] = useState([]);
-  const [enroll, setEnroll] = useState(false);
-  console.log(cart);
+
   useEffect(() => {
     fetch("courses.json")
       .then((res) => res.json())
@@ -17,9 +17,7 @@ const Courses = () => {
     const newCourses = [...cart, course];
     setCart(newCourses);
   };
-  const handleEnroll = (selectedCourse) => {
-    setEnroll(true);
-  };
+  const handleEnroll = (selectedCourse) => {};
   const handleDelete = (selectedCourse) => {
     const filtered = cart.filter(
       (course) => course.name !== selectedCourse.name
@@ -28,6 +26,8 @@ const Courses = () => {
   };
   return (
     <div className="container">
+      <h1 className="text-center fw-bold">Learn without limits</h1>
+      <p className="text-center">Total: {courses.length}</p>
       <div className="row">
         <div className="col-lg-9">
           <div className="row g-4">

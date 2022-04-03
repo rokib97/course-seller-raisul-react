@@ -10,7 +10,7 @@ const Cart = ({ course, handleDelete, handleEnroll }) => {
           <img className="rounded-pill" src={image} alt="" />
         </div>
         <div>
-          <h6>Name: {name.slice(0, 12)}</h6>
+          <h6>{name.length > 10 ? name.slice(0, 12) : name}</h6>
           <p>Price: {courseFee}</p>
           <button
             onClick={() => handleDelete(course)}
